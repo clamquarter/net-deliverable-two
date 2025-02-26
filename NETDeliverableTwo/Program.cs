@@ -53,6 +53,16 @@ else {
             {
                 userGuess = 1;
             }
+        //Update score based on whether or not the user guessed corerctly.
+        if (userGuess == flipResult)
+            {
+                //Increment score.
+                score++;
+                Console.WriteLine("You got it! Plus one for you."); 
+            } else
+            {
+                Console.WriteLine("Sorry, you guessed wrong. Better luck next time!");
+            }
         } else 
         {
             Console.WriteLine("Invalid input!");
