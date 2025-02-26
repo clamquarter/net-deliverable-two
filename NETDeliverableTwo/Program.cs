@@ -4,7 +4,8 @@
 
 //Program Variables
 string userName = "User";
-int rndNum = 0;
+//Declare a Random variable for use in random number generation later.
+Random ranNum = new Random();
 int score = 0;
 int roundNum = 0;
 
@@ -26,4 +27,10 @@ if (gameStart != "yes")
 //Assuming the user enters 'yes', the game begins!
 else {
     Console.WriteLine("Great, let's play! You get five chances to guess whether I'll get 'heads' or 'tails'.");
+    //Loop will run as long as the user has played fewer than five rounds, including the fifth round.
+    while (roundNum < 5)
+    {
+        //Increment roundNum.
+        roundNum++;        
+    }
 }
