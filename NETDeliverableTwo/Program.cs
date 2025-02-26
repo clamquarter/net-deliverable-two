@@ -13,7 +13,7 @@ int userGuess;
 
 
 //Challenge Begin Control Flow
-Console.WriteLine("Welcome, " + userName + ". What's your name?");
+Console.WriteLine("Welcome to the COIN FLIP CHALLENGE, " + userName + ". What's your name?");
 //Update the userName variable based on user input.
 userName = Console.ReadLine();
 //Ask the user if they would like to play the challenge.
@@ -24,7 +24,7 @@ string gameStart = Console.ReadLine();
 //If the user enters anything other than 'yes', end the program. (Will consider edge cases later)
 if (gameStart != "yes")
 {
-    Console.WriteLine("Coward! Fine, maybe next time.");
+    Console.WriteLine("You're a chicken, " + userName + ".");
 }
 //Assuming the user enters 'yes', the game begins!
 else {
@@ -71,4 +71,4 @@ else {
 }
 
 //End of challenge flow.
-Console.WriteLine("Challenge over! Your final score is: " + score);
+Console.WriteLine("Challenge over, " + userName + "! Your final score is: " + score);
