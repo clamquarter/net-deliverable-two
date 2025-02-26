@@ -68,7 +68,7 @@ else {
             Console.WriteLine("Invalid input!");
         }
     }
+    //End of challenge flow.
+    Console.WriteLine("Challenge over, " + userName + "! Your final score is: " + score);
 }
 
-//End of challenge flow.
-Console.WriteLine("Challenge over, " + userName + "! Your final score is: " + score);
