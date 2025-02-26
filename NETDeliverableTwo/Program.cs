@@ -37,7 +37,28 @@ else {
         //Generate a new random number to decide the flip outcome and update flipResult.
         flipResult = ranNum.Next(0, 2);     
 
+
         Console.WriteLine("Guess 'heads' or 'tails'.");
-        
+
+        string guessInput = Console.ReadLine();
+
+        //If guessInput is valid, convert it to an int for comparison to flipResult. 
+        if (guessInput == "heads" || guessInput == "tails")
+        {
+            //If guessInput is 'heads', update userGuess to 0. If it's 'tails', update guessInput to 1.
+            if (guessInput == "heads")
+            {
+                userGuess = 0;
+            } else
+            {
+                userGuess = 1;
+            }
+        } else 
+        {
+            Console.WriteLine("Invalid input!");
+        }
     }
 }
+
+//End of challenge flow.
+Console.WriteLine("Challenge over! Your final score is: " + score);
