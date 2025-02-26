@@ -8,6 +8,8 @@ string userName = "User";
 Random ranNum = new Random();
 int score = 0;
 int roundNum = 0;
+int flipResult;
+int userGuess;
 
 
 //Challenge Begin Control Flow
@@ -31,6 +33,11 @@ else {
     while (roundNum < 5)
     {
         //Increment roundNum.
-        roundNum++;        
+        roundNum++;
+        //Generate a new random number to decide the flip outcome and update flipResult.
+        flipResult = ranNum.Next(0, 2);     
+
+        Console.WriteLine("Guess 'heads' or 'tails'.");
+        
     }
 }
